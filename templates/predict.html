@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NewsBeacon - Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class = "predict-page">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-title">NewsBeacon.</div>
+            <div class="nav-links">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('predict') }}">Prediction</a>
+                <a href="{{ url_for('ml_info') }}">More Info</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="predict-section">
+        <h1>Is this News Real or Fake?</h1>
+
+        <form method="POST">
+            <textarea name="news_text" rows="10" placeholder="Enter news text here..." required></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+
+        {% if prediction %}
+            <h2>Results:</h2>
+            <p class="result">{{ prediction }}</p>
+
+            {% if probability is not none %}
+                <h2>Confidence:</h2>
+                <p class="probability">{{ probability }}%</p>
+            {% endif %}
+        {% endif %}
+    </section>
+</body>
+</html>

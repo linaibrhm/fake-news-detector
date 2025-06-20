@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NewsBeacon - More Info</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class = "ml_info-page">
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-title">NewsBeacon.</div>
+            <div class="nav-links">
+                <a href="{{ url_for('home') }}">Home</a>
+                
+                <a href="{{ url_for('ml_info') }}">More Info</a>
+            </div>
+        </div>
+    </nav>
+
+    <!--Title-->
+    <section id="title" class="container">
+        <div class="title-row">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="NewsBeacon Logo" class="title-logo">
+            <div class="title-text">
+                <h1>Welcome to NewsBeacon.</h1>
+                <h2>Your #1 Fake News Detector</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container about-wrapper">
+            <div class="about-text">
+                <div class="section">
+                    <h2>Definition Of Fake News</h2>
+                    <p>Fake news refers to false or misleading information presented as news, often created to influence public opinion, generate confusion, or achieve specific political or financial gains.</p>
+                </div>
+                
+                <div class="section">
+                    <h2>The Importance Of This Web App</h2>
+                    <p>In real-life scenarios, fake news can have significant consequences, shaping public perception and potentially leading to societal unrest, economic instability, or harm to individuals' reputations.</p>
+                </div>
+            </div>
+    
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/confused.png') }}" alt="About illustration">
+            </div>
+        </div>
+    </section>
+
+    <!-- About2 Section -->
+    <section id="about" class="about2-section">
+        <div class="container about2-wrapper">
+            <div class="about2-text">
+                <div class="section">
+                    <h2>How Does It Work?</h2>
+                </div>
+            <div class="about2-image">
+                <img src="{{ url_for('static', filename='images/process.png') }}" alt="About illustration">
+            </div>
+        </div>
+    </section>
+
+    <!--About3 section-->
+    <section class="about3-section">
+        <div class="about3-text">
+            <h1>How Is Accuracy Calculated?</h1>
+            <p>
+                Accuracy is one of the most basic evaluation metrics in machine learning. It measures how often the model’s predictions are correct.
+            </p>
+            <p>
+                <h2>Formula:</h2><br>
+                <code>Accuracy = (True Positives + True Negatives) / Total Predictions</code>
+            </p>
+            <p>
+                For example, if the system correctly identified 90 real news and 85 fake news out of 200 articles, the accuracy would be:<br>
+                <code>(90 + 85) / 200 = 87.5%</code>
+                While accuracy is useful, it’s often used alongside other metrics such as precision, recall, and F1-score to give a fuller picture—especially when datasets are imbalanced.
+            </p>
+        </div>
+    </section>
+
+    <!-- About4 Section -->
+    <section class="about4-section">
+        <div class="container about4-wrapper">
+            <div class="about4-text">
+                <h2>Why Use Machine Learning Instead of Manual Checking?</h2>
+                <ul>
+                    <li><strong>Speed:</strong> ML models can analyze thousands of articles in seconds, unlike human fact-checkers.</li>
+                    <li><strong>Consistency:</strong> Unlike people, ML models apply the same logic every time—reducing subjective bias.</li>
+                    <li><strong>Scalability:</strong> As misinformation grows, automated systems can handle the volume much more efficiently than manual reviewers.</li>
+                    <li><strong>Learning from Data:</strong> ML models continuously improve as more data becomes available.</li>
+                    <li><strong>24/7 Availability:</strong> Automated systems can operate non-stop without fatigue or human limitations.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+     <!-- My Info Section -->
+     <section id="info" class="info-section">
+        <div class="info-content">
+            <h1>About the Developer</h1>
+            <div class="info-box">
+                <p>
+                    Created by Lina Ibrahim, a student from Multimedia University Cyberjaya.
+                    This project was developed as part of a Final Year Project in July 2025.<br>
+                    E-mail: linaibrhm@gmail.com
+                </p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
