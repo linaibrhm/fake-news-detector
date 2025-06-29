@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NewsBeacon - FAQ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class = "FAQ-page">
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-title">
+                <span>NEWSBEACON</span>
+            </div>
+
+
+            <div class="nav-right">
+                <a href="{{ url_for('home') }}" class="nav-home">HOME</a>
+            
+            <div class="hamburger-container">
+                <div class="hamburger">☰</div>
+                <div class="popup-menu">
+                    <a href="{{ url_for('faq') }}">Definition & FAQ</a>
+                    <a href="{{ url_for('process') }}">Detection Process</a>
+                    <a href="{{ url_for('accuracy') }}">Accuracy Information</a>
+                    <a href="{{ url_for('AI_info') }}">AI Importance</a>
+                    <a href="{{ url_for('contact') }}">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </nav>
+
+    <!-- definition Section -->
+    <section class="def-section">
+        <div class="def-wrapper">
+            <div class="def-text">
+                <h2>The Importance of This<br> Web App</h2>
+                <p>
+                    In real-life scenarios, fake news can have significant consequences,
+                    shaping public perception and potentially leading to societal unrest,
+                    economic instability, or harm to individuals' reputations.
+                </p>
+
+                <h2>Definition of Fake News</h2>
+                <p>
+                    Fake news refers to false or misleading information presented as news,
+                    often created to influence public opinion, generate confusion, or achieve
+                    specific political or financial gains.
+                </p>
+            </div>
+
+            <div class="def-image">
+                <img src="{{ url_for('static', filename='images/confused.png') }}" alt="Confused illustration">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- faq Section -->
+    <section class="faq-section">
+        <div class="faq-layout">
+            <div class="faq-heading">
+                <h1>
+                    <span style="color: black;">Why</span><br>
+                    <span style="color: #ff78e5; font-size: 60px">Fake News</span><br>
+                    <span style="color: black;">is a problem?</span>
+                </h1>
+            </div>
+
+            <div class="faq-wrapper">
+                <div class="faq-box">
+                    <h2>False Articles</h2>
+                    <p>
+                        In recent years, the dissemination of fake news has <br> been brought more and more into the spotlight as 
+                        it <br>has been massively used to disseminate political <br>propaganda, influence the outcome of elections or 
+                        <br>harm a person or a group of people.
+                    </p>
+                </div>
+
+                <div class="faq-box">
+                    <h2>Confidence</h2>
+                    <p>
+                        Manual fact checking can address some of these <br>challenges, for example when checking the <br>consistency 
+                        of news in different contexts. However, <br>manual fact-checking is too slow to cover big <br>information spreaders 
+                        such as social media <br>platforms.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- footer Section -->
+    <footer class="custom-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>CONTACT ME</h3>
+                <a href="mailto:linaibrhm@gmail.com" class="footer-link">
+                    <img src="{{ url_for('static', filename='images/email-icon.png') }}" alt="Email" class="footer-icon">
+                    linaibrhm@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/lina-ibrahim-24700926b/" target="_blank" class="footer-link">
+                    <img src="{{ url_for('static', filename='images/linkedin-icon.png') }}" alt="LinkedIn" class="footer-icon">
+                    Lina Ibrahim
+                </a>
+            </div>
+
+            <div class="footer-column">
+                <h3>MORE ABOUT MY<br>RESEARCH</h3>
+                <a href="{{ url_for('static', filename='pdfs/FYP2.pdf') }}" target="_blank" class="footer-link">
+                    <img src="{{ url_for('static', filename='images/pdf-icon.png') }}" alt="PDF" class="footer-icon">
+                    Fake News Detection System using Machine Learning Techniques.
+                </a>
+            </div>
+        </div>
+
+        <p class="footer-credit">
+            © 2025, Created by Lina Ibrahim, a student from Multimedia University Cyberjaya. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>

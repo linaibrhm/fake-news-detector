@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NewsBeacon - Accuracy Info</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class = "accuracy-page">
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-title">
+                <span>NEWSBEACON</span>
+            </div>
+
+            <div class="nav-right">
+                <a href="{{ url_for('home') }}" class="nav-home">HOME</a>
+            
+            <div class="hamburger-container">
+                <div class="hamburger">☰</div>
+                <div class="popup-menu">
+                    <a href="{{ url_for('faq') }}">Definition & FAQ</a>
+                    <a href="{{ url_for('process') }}">Detection Process</a>
+                    <a href="{{ url_for('accuracy') }}">Accuracy Information</a>
+                    <a href="{{ url_for('AI_info') }}">AI Importance</a>
+                    <a href="{{ url_for('contact') }}">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </nav>
+
+    <!-- accuracy Section -->
+    <section id="about" class="accuracy-section">
+        <div class="accuracy-layout">
+
+            <!-- LEFT COLUMN -->
+            <div class="accuracy-left">
+                <h1>
+                    <span style="color: black;">How is</span>
+                    <span style="color: #ff78e5;">Accuracy</span><br>
+                    <span style="color: black;">calculated?</span>
+                </h1>
+                <p>
+                    Accuracy is one of the most basic <br>evaluation metrics in machine learning. 
+                     <br>It measures how often the model’s  <br>predictions are correct.
+                </p>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="accuracy-right">
+                <div class="accuracy-box formula-box">
+                    <h2>Formula</h2>
+                </div>
+
+                 <div class="accuracy-text">  
+                    <p style="color:white;">
+                        For example, if the system correctly identified 
+                        <strong>90</strong> <u>real news</u> and <strong>85</strong> <u>fake news</u> out of 
+                        <u><strong>200 articles</strong></u>, the accuracy would be:
+                        <br><br><strong>(90 + 85) / 200 = 87.5%</strong><br><br>
+                        While accuracy is useful, it’s often used alongside other metrics such as precision, recall, and F1-score to give a 
+                        <br>fuller picture—especially when datasets are imbalanced.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+<!-- footer Section -->
+    <footer class="custom-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>CONTACT ME</h3>
+                <a href="mailto:linaibrhm@gmail.com" class="footer-link">
+                    <img src="{{ url_for('static', filename='images/email-icon.png') }}" alt="Email" class="footer-icon">
+                    linaibrhm@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/lina-ibrahim-24700926b/" target="_blank" class="footer-link">
+                    <img src="{{ url_for('static', filename='images/linkedin-icon.png') }}" alt="LinkedIn" class="footer-icon">
+                    Lina Ibrahim
+                </a>
+            </div>
+
+            <div class="footer-column">
+                <h3>MORE ABOUT MY<br>RESEARCH</h3>
+                <a href="{{ url_for('static', filename='pdfs/FYP2.pdf') }}" target="_blank" class="footer-link">
+                    <img src="{{ url_for('static', filename='images/pdf-icon.png') }}" alt="PDF" class="footer-icon">
+                    Fake News Detection System using Machine Learning Techniques.
+                </a>
+            </div>
+        </div>
+
+        <p class="footer-credit">
+            © 2025, Created by Lina Ibrahim, a student from Multimedia University Cyberjaya. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
