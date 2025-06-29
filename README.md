@@ -1,17 +1,8 @@
+## (!IMPORTANT!) How To Run
+GitHub does not allow uploading file size that is >100MB, so I prompted to uploading my project onto Google Docs. I recommend reading the README.md file on Google Docs for more detailed information and explanation regarding this project.
 
-# Fake News Detection Web App
-
-This project is a Flask-based web application that uses machine learning to detect whether news articles are real or fake. It includes two trained models: Random Forest and Multinomial Naive Bayes.
-
-## Features
-
-- Input news text and get a real/fake prediction
-- High accuracy (up to 99%)
-- Built with Python, Flask, and scikit-learn
-
-## How To Run
-
-1. download ZIP folder
-2. Open 'app.py' file
-3. Open terminal and run "python app.py" (make sure file directory is correct)
-4. Open web browser and paste "http://127.0.0.1:5000" 
+1. Go to https://drive.google.com/drive/folders/1W28UX_1PMxSH3209OqEAj6aJdUvwlRIW?usp=sharing
+2. Download ZIP folder
+3. Open 'app.py' file
+4. Open terminal and run "python app.py" (make sure file directory is correct)
+5. Open web browser and paste "http://127.0.0.1:5000" 
